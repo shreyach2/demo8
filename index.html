@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple</title>
+
+    <style>
+        
+h1 {
+    color: maroon;
+    background-color: bisque;
+}
+
+body {
+    background-color: burlywood;
+    padding-top: 100px; /* Adjust this value based on the height of the header */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: burlywood; /* Match the header background color */
+}
+html {
+            scroll-padding-top: 100px; /* Adjust this value to match the header height */
+        }
+
+nav {
+    text-align: center;
+    margin: 1em 0;
+}
+
+/*nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: rgb(128, 0, 0);
+}*/
+nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: maroon;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+nav a:hover {
+            background-color: darkred;
+            color: white;
+        }
+        section {
+            padding: 2em;
+            background: white;
+            margin: 1em auto;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius:8px;
+        }
+
+form {
+    font-style: normal;
+}
+
+        
+        
+
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Smooth scroll for navigation links
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    document.getElementById(targetId).scrollIntoView({
+                       behavior: 'smooth'
+                    });
+                });
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <header class="head">
+        <h1 style="text-align:center;background-color: burlywood;">SHREE MANGALADEVI TEMPLE</h1>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#location">LOCATION</a>
+            <a href="#time">TIMINGS</a>
+            <a href="#contact">CONTACT US</a>
+        </nav>
+    </header>
+        <section id="home">
+        <h1>INTRODUCTION</h1>
+        <p>The Mangaladevi Temple is a Hindu temple at Bolara in the city of Mangalore in the Indian state of Karnataka. It is situated about three kilometres southwest of the city centre. The temple is dedicated to the Hindu goddess Shakti / Parvati in the form of Mangaladevi, the presiding deity from whom the city derives its name.</p>
+        <hr>
+        <img src="temp1.jpg" alt="Temple Image 1"width="300" height="250">
+        <img src="temp2.jpg" alt="Temple Image 2" width="300" height="250">
+        <img src="temp6.jpg" alt="Temple Image 3" width="300" height="250">
+        <br><hr>
+        <h1>HISTORY</h1>
+        <p>The temple dates back to the ninth century when Kundavarman, the most famous king of the Alupa dynasty, was ruling Tulu Nadu. During this period, there were two holy saints of the Nath cult, Machindranath and Gorakhnath, who came from Nepal. They reached Mangalore, crossing the river Nethravathi. The place where they crossed the river came to be known as Gorakdandi. They chose a place near the banks of the Netravathi which was once the centre of activities of the sage Kapila. The ruling king met the two saints. Pleased with the humility and virtues of the king, they informed him that his kingdom needed to be sanctified with a temple for Mangaladevi. From their own mother he heard the story of Vihasini and Andasura, Parashurama and the temple built by them. The two saints took the king to the sites where all these historical events had taken place. They asked the king to dig the place and relieve the lingam and the dharapatra symbolising Mangaladevi and install them in a shrine along with Nagaraja for providing protection. Kundavarman built a grand shrine to Mangaladevi on the hallowed place with the guidance of the sages. Even today the two temples of Mangaladevi and Kadri, Mangalore have maintained their connection. The hermits of Kadri Yogirajmutt visit Mangaladevi temple on the first days of Kadri temple festival and offer prayer and silk clothes.</p>
+    </section>
+    <hr>
+    <section id="location">
+        <h1>LOCATION</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.908515937569!2d74.84286907507435!3d12.849185087455044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35bbbd8b5408b%3A0x8ac51fa0a23cf4ec!2sMahatobhara%20Sri%20Mangaladevi%20Temple!5e0!3m2!1sen!2sin!4v1720680115307!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <hr>
+    <section id="time">
+        <h1>SHREE MANGALADEVI DARSHAN TIMINGS</h1>
+        <p>Moring:6:00 A.M to 10:00 A.M<br>
+            Afternoon:12:00 P.M to 12:30 P.M later at 1:00P.M<br>
+            Evening:4:00 P.M to 8:30 P.M(Fridays till 9:00 P.M)
+        </p>
+        <h1>DAILY POOJA TIMINGS</h1>
+        Morning Pooja at 6:00 A.M<br>
+        Afternoon Pooja at 1:00 P.M<br> 
+        Evening Pooja at 8:30 P.M (Fridays at 9:00 P.M)
+        <p>
+
+        </p>
+        
+                
+    </section>
+    <hr>
+    <section id="contact">
+        <h1>CONTACT US</h1>
+        <p>MAHATOBHAR SHREE MANGALADEVI TEMPLE<br>
+        Mangaladevi,Bolar,<br>
+        Mangalore - 575001<br>
+        E-mail:mangaladevitemple@yahoo.in<br>
+        Ph:0824-2415476,91-876237884<br.</p>
+
+    </section>
+    <hr>
+</body>
+</html>
